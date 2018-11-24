@@ -12,14 +12,11 @@ setuptools.setup(
     name='project_initializer',
     version='0.1.0',
     packages=setuptools.find_packages(),
+    package_dir={'project_initializer': 'project_initializer'},
+    package_data={'project_initializer': [
+        'data/README.md', 'data/.gitignore']},
     install_requires=[
         'docopt'
-    ],
-    data_files=[
-        (DATA_DIR, [
-            "README.md",
-            ".gitignore"
-        ])
     ],
     entry_points={
         'console_scripts': [

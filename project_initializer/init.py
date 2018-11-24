@@ -3,6 +3,8 @@ import os
 import shutil
 import sys
 
+from . import PROJECT_DIR
+
 """Create a new project and initialize it with a .gitignore file
 @params project: name of a project to be initialized
 effects:
@@ -11,14 +13,10 @@ effects:
     .gitignore in the created project directory must be the same as the gitignore in THIS directory 
 """
 
-PROJECT_NAME = "project_initializer"
-DATA_DIR = os.path.join(
-    sys.prefix, "local/lib/python3.6/dist-packages", PROJECT_NAME)
-
 
 def run(project):
     os.mkdir(project)
-    shutil.copyfile(os.path.join(DATA_DIR, "README.md"),
+    shutil.copyfile(os.path.join(PROJECT_DIR, 'data/README.md'),
                     f"{project}/README.md")  # problem
 
 
