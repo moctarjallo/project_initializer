@@ -9,7 +9,7 @@ pip install . or python setup.py install
 ```
 
 **Usage**
-Invoque the `proj` command line interface:
+Invoque the `project` command line interface:
 ```
-proj init <some-name-of-your-project>
+project init <some-name-of-your-project>
 ```

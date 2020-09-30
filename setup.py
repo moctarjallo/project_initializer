@@ -20,7 +20,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'proj = project_initializer.__main__:main'
+            'project = project_initializer.__main__:main'
         ]
     }
 )
